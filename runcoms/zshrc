@@ -21,6 +21,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zfunctions" ]]; then
 fi
 
 # Source Macaulay2
-if [[ -s "${HOME}/.macaulay2.sh" ]]; then
-  source "${HOME}/.macaulay2.sh"
+if [[ -s "${ZDOTDIR:-$HOME}/.macaulay2.sh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.macaulay2.sh"
 fi
