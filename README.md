@@ -20,7 +20,7 @@ version is 4.3.11.
   2. Clone the repository:
 
      ```console
-     git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+     git clone --recursive ssh://git@cs.github.com/csorger/prezto "${ZDOTDIR:-$HOME}/.zprezto"
      ```
 
   3. Create a new Zsh configuration by copying the Zsh configuration files
@@ -40,13 +40,20 @@ version is 4.3.11.
      complicated setups, it is recommended that you back up your original
      configs and replace them with the provided prezto runcoms.
 
-  4. Set Zsh as your default shell:
+  4. Set Upstream 
 
      ```console
-     chsh -s /bin/zsh
+     git remote add upstream https://github.com/sorin-ionescu/prezto.git
      ```
 
-  5. Open a new Zsh terminal window or tab.
+  5. Update from sorin as follows:
+  
+     ```console
+     git fetch upstream
+     git checkout master
+     git merge upstream/master
+     git push origin
+     ```
 
 ### Troubleshooting
 
