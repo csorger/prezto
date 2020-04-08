@@ -3,11 +3,24 @@
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
+#   Christoph Sorger <christoph.sorger@gmail.com>
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# Source Aliases
+if [[ -s "${ZDOTDIR:-$HOME}/.zaliases" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zaliases"
+fi
+
+# Source Functions
+if [[ -s "${ZDOTDIR:-$HOME}/.zfunctions" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zfunctions"
+fi
+
+# Source Macaulay2
+if [[ -s "${HOME}/.macaulay2.sh" ]]; then
+  source "${HOME}/.macaulay2.sh"
+fi

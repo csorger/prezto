@@ -1,0 +1,26 @@
+# zaliases
+# Christoph Sorger
+
+# ls and friends {{{
+alias ll='ls -alFh'
+# }}}
+
+# Updates {{{≈
+alias brewup='brew update; brew upgrade; brew cask upgrade; brew cleanup; brew doctor;'
+alias update='brewup;'
+# }}}
+
+# Strip png's {{{
+# The following alias avoids the libpng warning: iCCP: known incorrect sRGB profile:
+# http://tex.stackexchange.com/questions/125612/warning-pdflatex-libpng-warning-iccp-known-incorrect$
+alias strippng='find . -type f -name "*.png" -exec convert {} -strip {} \;'
+# }}}
+
+# Hashes {{{
+alias sha1='openssl dgst -sha1'
+alias sha256='openssl dgst -sha256'
+# }}}
+
+# Remove .DS_Store files {{{
+alias rmdsstore='find . -name ".DS_Store" -type f -delete'
+# }}}
