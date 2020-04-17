@@ -20,6 +20,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zfunctions" ]]; then
   source "${ZDOTDIR:-$HOME}/.zfunctions"
 fi
 
+# Source Perl
+if [[ -s "${ZDOTDIR:-$HOME}/.zperl" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zperl"
+fi
+
 # Source Macaulay2
 if [[ -s "${ZDOTDIR:-$HOME}/.macaulay2.sh" ]]; then
   source "${ZDOTDIR:-$HOME}/.macaulay2.sh"
