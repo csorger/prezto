@@ -24,3 +24,6 @@ alias sha256='openssl dgst -sha256'
 # Remove .DS_Store files {{{
 alias rmdsstore='find . -name ".DS_Store" -type f -delete'
 # }}}
+
+# gcc
+unalias gcc
