@@ -15,3 +15,9 @@ fi
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export PIP_REQUIRE_VIRTUALENV=true
 
+# brew install cask java
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# We use macOS ruby, gem and bundle.
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+export GEM_HOME="$HOME/.gem/ruby/2.6.0"
