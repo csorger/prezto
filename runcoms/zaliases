@@ -27,3 +27,6 @@ alias rmdsstore='find . -name ".DS_Store" -type f -delete'
 
 # gcc
 unalias gcc
+
+# bundle (for ruby gems)
+alias be='bundle exec '
